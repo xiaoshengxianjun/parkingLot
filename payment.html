@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>月星停车</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/payment.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="licensePlate">
+				<ul class="licensePlateTxt">
+					<li>沪</li>
+					<li>A</li>
+					<li>T</li>
+					<li>X</li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+				</ul>
+				<button id="giveUpBtn">放弃</button>
+			</div>
+			<div class="timeMoney">
+				<div class="allTime">
+					<p>总时长</p>
+					<p class="red">5小时0分钟</p>
+					<div class="lineCol"></div>
+				</div>
+				<div class="shouldPay">
+					<p>应付金额</p>
+					<p class="red">￥<span>50</span></p>
+				</div>
+				<div class="lineRow"></div>
+			</div>
+			<div class="admission">
+				<div class="admissionLeft">
+					<p>入场时间&nbsp;&nbsp;&nbsp;&nbsp;<span>2016-11-22</span>&nbsp;&nbsp;<span>07:22:33</span></p>
+					<p>缴费时间&nbsp;&nbsp;&nbsp;&nbsp;<span>2016-11-22</span>&nbsp;&nbsp;<span>17:22:33</span></p>
+				</div>
+				<div class="admissionRight">
+					<img src="img/mapIcon.png" />入场图
+				</div>
+			</div>
+			<div class="paymentMethod">
+				<div class="integral" id="integral">
+					<dl>
+						<dt><img src="img/jifen.png"/></dt>
+						<dd>
+							<p>积分抵扣</p>
+							<p>总积分：<span class="blue">100000</span></p>
+						</dd>
+					</dl>
+					<div class="integralInfo">
+						<div class="lineRow-8"></div>
+						<p>抵扣时长：<button id="reduceBtn">-</button><span class="blue" id="timeNum">0</span><button id="plusBtn">+</button>小时</p>
+						<p>花费积分：<span class="blue integralNum">0</span>积分</p>
+						<p>抵扣规则：10积分抵扣1小时</p>
+					</div>
+					<img id="openIcon" src="img/xiala.png" />
+					<div class="lineRow"></div>
+				</div>
+				<div class="alipay" id="alipay">
+					<dl>
+						<dt><img src="img/alipay.png"/></dt>
+						<dd>
+							<p>支付宝支付</p>
+							<p>支付金额：<span class="red">￥7.00</span></p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="goPay">
+				<div class="goPayTxt">
+					合计:<span>￥7.00</span>
+				</div>
+				<button class="goPayBtn" id="goPayBtn">结算</button>
+			</div>
+		</div>
+		<div class="payConfirmBox">
+			<div class="payConfirm">
+				<p>支付确认</p>
+				<div class="stopInfo">
+					<p><span class="fl">车牌:</span><span class="fr">沪AK47F</span></p>
+					<p><span class="fl">进场时间:</span><span class="fr">2016-11-22 07:22:33</span></p>
+					<p><span class="fl">总时长:</span><span class="fr">5小时0分钟</span></p>
+					<p><span class="fl">总金额:</span><span class="fr">10元</span></p>
+					<div class="lineRow"></div>
+				</div>
+				<div class="payInfo">
+					<h3>支付信息</h3>
+					<p><span class="fl">积分抵扣:</span><span class="fr">4小时</span></p>
+					<p><span class="fl">支付宝缴费:</span><span class="fr">2元</span></p>
+				</div>
+				<div class="btns">
+					<div class="lineRow"></div>
+					<div class="payBtn">
+						支付
+						<div class="lineCol"></div>
+					</div>
+					<div class="cancleBtn">
+						取消
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/payment.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

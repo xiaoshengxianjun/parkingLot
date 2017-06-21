@@ -1,0 +1,53 @@
+*{margin: 0;padding: 0;}
+ul li{
+	list-style: none;
+}
+body{
+	background-color: #f3f3f3;
+}
+.red{
+	color: #fe7a31;
+}
+.blue{
+	color: #4F88F1;
+}
+.fl{
+	display: block;
+	float: left;
+}
+.fr{
+	display: block;
+	float: right;
+}
+.container{
+	width: 100%;
+	height: 100%;
+}
+/*一像素边框*/
+.lineRow{
+	width: 100%;
+	height: 0px;
+	border-bottom: 1px solid #cccccc;
+	transform: scaleY(0.5);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.lineCol{
+	width: 0px;
+	height: 60%;
+	border-right: 1px solid #cccccc;
+	transform: scaleX(0.5);
+	position: absolute;
+	top: 20%;
+	right: 0px;
+}
+.lineRow-8{
+	width: 90%;
+	height: 0px;
+	border-bottom: 1px solid #cccccc;
+	transform: scaleY(0.5);
+	position: absolute;
+	top: 0px;
+	left: 5%;
+}
